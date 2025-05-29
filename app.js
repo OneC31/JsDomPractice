@@ -70,6 +70,10 @@ function generarColorHexadecimal() {
     return color;
 }
 
+const tercerTopping = document.querySelectorAll('.toppings');
+
+[...tercerTopping].forEach(topping => topping.onclick = e => console.log(e.target.id));
+
 
 
 /*async function fetchData() {
