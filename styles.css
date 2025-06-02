@@ -25,6 +25,23 @@
     justify-content: center;
     width: 100%;
 }
+.btn{
+    background-color: #e7e7e7;
+    color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 30px;
+    color: #0a080a;
+    border-radius: 20px;  
+    user-select: none;  
+}
+.btn:hover{
+    background-color: #d8a24c;
+}
 
 body{
     background-color: aqua;
