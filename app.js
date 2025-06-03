@@ -70,16 +70,29 @@ function generarColorHexadecimal() {
     }
     return color;
 }
+   let color_generado = "#fff";
+
+   const red = document.getElementById('red');
+   red.oninput = () => document.body.style.backgroundColor = `rgb(${red.value}, ${green.value}, ${blue.value})`;
+
+    const green = document.getElementById('green');
+    green.oninput = () => document.body.style.backgroundColor = `rgb(${red.value}, ${green.value}, ${blue.value})`;
+
+    const blue = document.getElementById('blue');
+    blue.oninput = () => document.body.style.backgroundColor = `rgb(${red.value}, ${green.value}, ${blue.value})`;
+
+    
+//document.body.style.backgroundColor = 
 
 const boton = document.getElementById('boton');
 const colorText= document.getElementById('color');
 
 
-boton.addEventListener('click', function(){
+/*boton.addEventListener('click', function(){
     let newColor = generarColorHexadecimal();
     colorText.innerText = newColor;
     document.body.style.backgroundColor = newColor; 
-});
+});*/
 
 const tercerTopping = document.querySelectorAll('.toppings');
 
