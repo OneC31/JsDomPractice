@@ -57,9 +57,10 @@ function mostrarClick () {
 }
 function backgroundColor() {
     console.log('cambio de color');
-    document.body.style.backgroundColor = generarColorHexadecimal();
+    document.body.style.backgroundColor = generarColorHexadecimal(); 
 }
 
+//console.log(colorText.innerText);
 //funcion de generar color aleatorio hexadecimal
 function generarColorHexadecimal() {
     const letras = '0123456789ABCDEF';
@@ -70,9 +71,24 @@ function generarColorHexadecimal() {
     return color;
 }
 
+const boton = document.getElementById('boton');
+const colorText= document.getElementById('color');
+
+
+boton.addEventListener('click', function(){
+    let newColor = generarColorHexadecimal();
+    colorText.innerText = newColor;
+    document.body.style.backgroundColor = newColor; 
+});
+
 const tercerTopping = document.querySelectorAll('.toppings');
 
 [...tercerTopping].forEach(topping => topping.onclick = e => console.log(e.target.id));
+
+
+
+
+
 
 
 
