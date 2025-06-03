@@ -74,6 +74,8 @@ function generarColorHexadecimal() {
 
    const red = document.getElementById('red');
    red.oninput = () => document.body.style.backgroundColor = `rgb(${red.value}, ${green.value}, ${blue.value})`;
+   let textoRojo = document.getElementById('red');
+    textoRojo.innerText = red.value;
 
     const green = document.getElementById('green');
     green.oninput = () => document.body.style.backgroundColor = `rgb(${red.value}, ${green.value}, ${blue.value})`;
