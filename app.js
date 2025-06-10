@@ -84,6 +84,7 @@ function generarColorHexadecimal() {
     blue.oninput = () => document.body.style.backgroundColor = `rgb(${red.value}, ${green.value}, ${blue.value})`;
 
     
+    
 //document.body.style.backgroundColor = 
 
 const boton = document.getElementById('boton');
@@ -95,6 +96,12 @@ const colorText= document.getElementById('color');
     colorText.innerText = newColor;
     document.body.style.backgroundColor = newColor; 
 });*/
+
+
+green.addEventListener('click'), mostrarClick(toppingnuevo);{
+    console.log('click en el boton verde');
+    
+}
 
 const tercerTopping = document.querySelectorAll('.toppings');
 
